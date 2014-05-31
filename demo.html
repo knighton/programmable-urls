@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>demo</title>
+</head>
+<body>
+<script src="clicks.js"></script>
+<script>
+// Pull the old "left click/middle click" switcheroo.
+var on_left = Clicks.spawn_new_tab;
+var on_middle = Clicks.go_to_url;
+document.body.innerHTML += Clicks.draw_link(
+    'http://google.com', 'click me', on_left, on_middle);
+</script>
+</body>
+</html>
